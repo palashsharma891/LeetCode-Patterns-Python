@@ -8,3 +8,8 @@ class Solution:
             else:
                 dic[n] = 1
         return False
+
+# 2nd attempt
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        return len(set(nums)) != len(nums)
